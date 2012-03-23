@@ -1,0 +1,33 @@
+vi:
+
+  layouts:
+    application:
+      title:	"Kho sách"
+      home:	"Trang chủ"
+      questions:	"Câu hỏi"
+      news:	"Tin tức"
+      contact:	"Danh bạ"
+
+  store:
+    index:
+      title_html:	"Danh mục sản phẩm"
+      add_html:	"Thêm vào giỏ hàng"
+
+  carts:
+    cart:
+      title:	"Giỏ hàng của bạn"
+      empty:	"Xóa giỏ hàng"
+      checkout:	"Thanh toán"
+
+  orders:
+    new:
+      legend:	"Điền thông tin cá nhân"
+    form:
+      name:	"Tên"
+      address_html:	"Địa chỉ"
+      email:	"Email"
+      pay_type:	"Kiểu thanh toán"
+      pay_prompt_html:	"Chọn phương thức thanh toán"
+      submit:	"Thanh toán"
+
+  thanks:	"Cảm ơn bạn đã đặt hàng"

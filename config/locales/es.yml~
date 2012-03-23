@@ -1,0 +1,9 @@
+es:
+
+  layouts:
+    application:
+      title:	"Publicaciones"
+      home:	"Inicio"
+      questions:	"Preguntas"
+      news:	"Noticias"
+  
