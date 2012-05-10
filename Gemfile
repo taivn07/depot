@@ -38,3 +38,19 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 gem 'will_paginate', '>=3.0.pre'
+
+# Add rspec-rails to the :test and :development group
+group :test, :development do
+  gem "rspec-rails"
+  gem "capybara"
+  gem "rspec-mocks"
+  #for guard and spork
+  gem 'spork', '~> 0.9.0.rc'
+  gem 'guard'
+  gem 'guard-spork'
+  gem 'guard-rspec'
+  #for fabricator
+  gem 'faker'
+  gem 'fabrication'  # <= これ
+  gem 'wirble'
+end
