@@ -5,7 +5,7 @@ class UsersControllerTest < ActionController::TestCase
     @input_attributes = {
       :name	=> "sam",
       :password	=> "private",
-      :password_confirmation => "private"
+      :password_confirmation => "private" }
     @user = users(:one)
   end
 

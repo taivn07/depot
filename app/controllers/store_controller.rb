@@ -4,10 +4,11 @@ class StoreController < ApplicationController
     if params[:set_locale]
       redirect_to store_path(:locale => params[:set_locale])
     else
-        @products = Product.paginate :page => params[:page], :per_page => 4, 
-        :order => 'created_at DESC'
+      @products = Product.paginate :page => params[:page], :per_page => 3, 
+      :order => 'created_at DESC'
       @counter = user_accessed_time
       @cart = current_cart
+      render_cms ""
     end
   end
 

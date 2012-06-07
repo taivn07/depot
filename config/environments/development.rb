@@ -49,4 +49,8 @@ Depot::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+  
+  # renderer cms
+  config.render_cms = File.exist?(Rails.root.join('tmp', 'render_cms.txt').to_s)
+  #config.render_cms = false
 end

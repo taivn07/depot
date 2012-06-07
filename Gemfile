@@ -3,6 +3,9 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.3'
 gem 'mysql2', '~> 0.3'
 
+# Gems use for Solr
+gem 'rsolr'
+
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -39,6 +42,8 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 gem 'will_paginate', '>=3.0.pre'
 
+# CMS
+gem 'comfortable_mexican_sofa', git: 'https://github.com/lis2/comfortable-mexican-sofa.git'
 # Add rspec-rails to the :test and :development group
 group :test, :development do
   gem "rspec-rails"
