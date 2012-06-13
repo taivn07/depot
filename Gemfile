@@ -1,6 +1,12 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.2'
+gem 'rails', '3.2.3'
+gem 'mysql2', '~> 0.3'
+
+# Gems use for Solr
+gem 'sunspot_rails'
+gem 'sunspot_solr'
+gem 'progress_bar'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -38,6 +44,23 @@ gem 'jquery-rails'
 # gem 'ruby-debug19', :require => 'ruby-debug'
 gem 'will_paginate', '>=3.0.pre'
 
+# CMS
+gem 'comfortable_mexican_sofa', git: 'https://github.com/lis2/comfortable-mexican-sofa.git'
+# Add rspec-rails to the :test and :development group
+group :test, :development do
+  gem "rspec-rails"
+  gem "capybara"
+  gem "rspec-mocks"
+  #for guard and spork
+  gem 'spork', '~> 0.9.0.rc'
+  gem 'guard'
+  gem 'guard-spork'
+  gem 'guard-rspec'
+  #for fabricator
+  gem 'faker'
+  gem 'fabrication'  # <= これ
+  gem 'wirble'
+end 
 group :production do
   gem 'mysql'
 end

@@ -1,3 +1,4 @@
+require 'sunspot_rails'
 class Product < ActiveRecord::Base
   default_scope :order => 'title'
   has_many :line_items
@@ -13,6 +14,11 @@ class Product < ActiveRecord::Base
   }
   validates :image_url, :uniqueness => true
   validates :price, :numericality => {:less_than_or_equal_to => 1000}
+  
+  #index
+  searchable do
+    text :title, :description
+  end
 
   #ensure that there are no line items referencing this product
   def ensure_not_referenced_by_any_line_item
