@@ -4,7 +4,9 @@ gem 'rails', '3.2.3'
 gem 'mysql2', '~> 0.3'
 
 # Gems use for Solr
-gem 'rsolr'
+gem 'sunspot_rails'
+gem 'sunspot_solr'
+gem 'progress_bar'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
