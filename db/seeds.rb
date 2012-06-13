@@ -6,7 +6,14 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 Product.delete_all
-Product.create(:title => 'Programming ruby 1.9',
-  :description => %{<p>Ruby is the fastest growing language</p>},
-  :image_url => '/images/ruby.jpg',
-  :price => 49.30)
+100.times do
+  Product.create(
+    :title => Faker::Lorem.sentence,
+    :description => Faker::Lorem.paragraph,
+    :image_url => '/images/ruby.jpg',
+    :price => rand(999)
+    )
+end
+
+
+

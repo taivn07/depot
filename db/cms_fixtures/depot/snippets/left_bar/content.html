@@ -1,0 +1,8 @@
+{{ cms:snippet:cart }}
+<a href="http://localhost:3000">Home</a><br />
+<a href="http://localhost:3000/question">Question</a><br />
+<a href="http://localhost:3000/new">News</a><br />
+<a href="http://localhost:3000/contact">Contact</a><br />
+<% if session[:user_id] %>
+  {{ cms:snippet:user_left_bar }}
+<% end %>

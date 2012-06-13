@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Pragprog Book Online </title>
+  {{ cms:asset:layout:css:html_tag }}
+  {{ cms:snippet:common_metas }}
+</head>
+<body id="store">
+  <div id="header">
+    {{ cms:snippet:header }}
+  </div>
+  <div id="banner">
+    <div id="title">
+      {{ cms:page:title }}
+    </div>
+  </div>
+  <div id="columns">
+    <div id="side">
+      {{ cms:snippet:left_bar }}
+    </div>
+    <div id="main">
+      {{ cms:page:content }}
+    </div>
+  </div>
+  <div id="footer">
+    {{ cms:snippet:footer }}
+  </div>
+</body>
+</html>
