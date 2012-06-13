@@ -19,11 +19,11 @@ test:
   host: localhost
 
 production:
-  adapter: mysql2
+  adapter: mysql
   encoding: utf8
-  reconnect: false
-  database: depot_production
+  reconect: false
+  database: depot_product
   pool: 5
   username: root
-  password:
+  password: "171287"
   host: localhost
